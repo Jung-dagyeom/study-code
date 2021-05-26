@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>animation test</title>
+<style>
+    .box {
+        border: 1px solid #000;
+        height: 50px;
+    }
+    .battery {
+        /* from */
+        width: 10%;
+        /* to */
+        /* width: 100%; */
+        height: 100%;
+        background-color: khaki;
+        animation-name: full;
+        animation-duration: 3s;
+        animation-delay: 1s;
+        /* count의 dafult값은 1이다. */
+        /* animation-iteration-count: 3; */
+        /* 왔다갔다해라 alternate */
+        animation-fill-mode: both;
+        animation-timing-function: linear;
+        cursor: pointer;
+        animation: full 2s 2s 3 backwards;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+    }
+    .battery:hover {
+        animation-play-state: paused;
+    }    
+        
+        
+        /* 
+        value
+        1. backwards : 대기 시점에 상태를 적용/유지 한다.
+        2. forwards : 끝 지점의 상태를 유지
+        3. both : 둘다 적용하고 유지한다.
+        */
+    /* animation이름은 용도에 맞게 자유롭게 작성하기   */
+    @keyframes full {
+        /* 시작 지점 */
+        0% {
+            width: 10%;
+            font-size: 2rem;
+            background: red;
+        }
+
+        50% {
+            background: orangered;
+        }
+        100% {
+            width: 100%;
+            background: yellow;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="box">
+        <div class="battery">
+            battery
+        </div>
+    </div>
+</body>
+</html>

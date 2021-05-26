@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>bg practice</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    .container {
+        width: 1100px;
+        height: 1100px;
+        border: 50px  dotted red;
+        margin: 0 auto;
+        padding: 30px;
+        /* 배경 기본 세팅
+        img, no-repeat, cover, center */
+        /* background-image: url(image/KakaoTalk_20210209_233030905.jpg);
+        background-repeat: no-repeat;
+        background-size:200px 200px;
+        background-position:right ; */
+        /* 
+        1. px
+        2. %
+        3. position naame
+         */
+        /* 이렇게 한꺼번에 적용 가능 중요** */
+         /* background:
+          url(image/KakaoTalk_20210209_233030905.jpg) left top,
+          url(image/KakaoTalk_20210209_233030905.jpg) center top,
+          url(image/KakaoTalk_20210209_233030905.jpg) right top,
+          url(image/KakaoTalk_20210209_233030905.jpg) left,
+          url(image/KakaoTalk_20210209_233030905.jpg) center;
+
+         background-size: 200px 200px;
+         background-repeat: no-repeat; */
+
+        background:url(image/KakaoTalk_20210209_233030905.jpg) no-repeat center/cover;
+        /* origin은 padding 값이 기본임 */
+        background-origin: border-box;
+        background-clip: padding-box;
+        color: seashell;
+
+  
+  
+    }
+</style>
+</head>
+<body>
+    <!-- 
+        1. image : contents
+        2. bg img : context
+     -->
+    <div class="container">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, cupiditate in enim eos expedita adipisci, accusantium dolorem dignissimos atque odit sapiente velit ducimus quaerat totam minima unde labore pariatur nam.
+      Accusantium harum modi, eius ex debitis, magni inventore hic veritatis culpa voluptas nesciunt totam sit saepe quia explicabo repellendus atque dolorem distinctio praesentium. Harum blanditiis dignissimos minima culpa veniam laborum?
+      Voluptatum, sapiente optio quidem reprehenderit reiciendis delectus repellat itaque voluptates nemo ab possimus cum consequatur velit, iure saepe eaque dignissimos ducimus perspiciatis consectetur eum! Itaque accusantium corporis amet! Repellendus, iure.
+      Expedita ipsam iste ab commodi fugiat ratione deleniti quisquam nisi asperiores aliquid, rerum ullam sed temporibus excepturi id accusamus nihil numquam? Est, ducimus omnis eius amet aspernatur repellendus fugiat labore.
+      Eaque neque harum sint maxime debitis assumenda rerum consequatur unde odit officiis? Hic nam culpa neque soluta nesciunt delectus voluptates explicabo, corrupti veritatis eveniet, voluptatibus vel natus ducimus odio modi?
+      In magni modi autem. Omnis cum fugit, libero iste nesciunt provident nisi consequuntur laboriosam numquam reiciendis atque quos repellendus et dicta, tempore suscipit, earum nemo voluptas. Repellat ex culpa vel?
+      Voluptate at illo asperiores cum! Quasi corrupti natus dolorum ut iusto eius earum nihil velit labore in ipsum rerum maiores repellat ducimus dolore molestias laborum, architecto, fuga ullam vel? Dolores?
+      Laudantium, explicabo commodi earum necessitatibus, beatae dolorum rem magni iste consectetur optio praesentium fuga voluptas accusantium. Delectus assumenda quod totam atque accusantium laudantium iusto sint culpa voluptatum, hic, impedit sit.
+      Beatae laborum voluptatibus cum magnam cumque nostrum, consequatur ut deserunt voluptatum placeat molestias suscipit atque vitae quam amet ad perferendis, nisi corporis, eaque modi qui voluptate et in sed! Voluptate.
+      Provident, unde vero earum neque error laudantium ullam perspiciatis similique soluta libero. At, voluptate aliquam velit atque sequi, inventore adipisci tempora facilis hic, impedit fugiat assumenda exercitationem natus repellat error!
+    </div>
+
+</body>
+</html>

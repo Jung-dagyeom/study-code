@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>review -css</title>
+<style>
+ /
+
+    /* tag, class, id, inline style,*(universal) */
+    /* 복합셀렉터 */
+    /* 자식셀렉터 */
+    /* .parent >(바로아래래) div{
+        border: 1px solid #000;
+    } */
+    .parent div{
+        border: 1px solid #000;
+    }
+    /* 인접형제 셀렉터 */
+    .parent .child + div{
+        background-color: coral;
+    }
+    /* 일반형제 셀렉터터 */
+    .parent .child~ div{
+        /* background-color: coral; */
+        color: red;
+    }
+</style>
+</head>
+<body>
+    <!-- box model -->
+    <!-- <div class="box model">
+        box model
+    </div> -->
+    <div class="parent">
+        <div class="child">
+            1
+            <div>1-1</div>
+        </div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>

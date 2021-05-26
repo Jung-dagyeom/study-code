@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>pseudo selectol basic</title>
+        <style>
+    /* 가상샐렉터는 inline요소다!! 제일 중요!! */
+    /* 무조건 content를 넣어줘야한다. */
+    /* 그래서 크기값을 가지지 않지만 
+    display: inline-block으로 바꿔주면 크기값 가질 수 있다. */
+    .box {
+        border: 5px solid #000;
+        width: 500px;
+        height: 300px;
+        padding-top: 100px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    span {
+        font-size: 50px;
+        color: palevioletred;
+        border: 5px dotted palevioletred;
+    }
+    span:before {
+        content: 'before - ';
+        color: #fff;
+        font-size: 20px;
+        background-color: skyblue; 
+        display: inline-block;
+        border: 2px solid #000;
+        border-radius: 50%;
+        width: 80px;
+        height: 30px;
+        margin-right: 20px;
+    }
+    span:after {
+        content: ' - after';
+        color: #fff;
+        font-size: 20px;
+        background-color: coral;
+        display: inline-block;
+        border: 2px solid #000;
+        border-radius: 50%;
+        width: 80px;
+        height: 30px;
+        margin-left: 20px;
+    }
+</style>
+</head>
+<body>
+    <div class="box">
+        <span>font</span>
+    </div>
+</body>
+</html>

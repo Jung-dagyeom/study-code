@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>review</title>
+<style>
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .container {
+        width: 500px;
+        height: 500px;
+        border: 10px solid #000;
+        /* static을 제외한 position 속성이 있으면 */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .box {
+        width: 100%;
+        height: 100px;
+        /* background: red; */
+        /* border-radius: 50%; */
+        /* top 버튼은 fixed해주기! */
+        position: fixed;
+       top: 0;
+       left: 0;
+       /* text-align: center; */
+        /* transform: translate(-50%, -50%); */
+    }
+    h1 {
+        display: inline-block;
+        border: 1px solid #000;
+    }
+    ul {
+        text-align: center;
+    }
+    ul li {
+      display: inline-block;
+    }
+    /* 셀렉터 때문에 ul.gnb가 우선순위가 높다. */
+    /* type selector + class selector */
+    /* ul.gnb {} */
+    /* class selector */
+    /* .gnb {} */
+
+    ul.slider li a {
+        /* background: coral; */
+        padding: 5px;
+        position: relative;
+    }
+    /* 가장 엘리먼트 */
+    ul.slider li a:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        background: purple;
+        width: 2px;
+        height: 2px;
+        transition: .5s;
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    ul.slider li a:hover:after {
+        width: 100%;
+        transform: translateX(-50%);
+        opacity: 1;
+    }
+
+</style>
+</head>
+<body>
+    <div class="box">
+        <ul class="slider">
+            <li><a href="#">menu1</a></li>
+            <li><a href="#">menu2</a></li>
+            <li><a href="#">menu3</a></li>
+            <li><a href="#">menu4</a></li>
+            <li><a href="#">menu5</a></li>
+        </ul>
+    </div>
+</body>
+</html>

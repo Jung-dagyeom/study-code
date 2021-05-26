@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>dtravel review</title>
+</head>
+<body>
+    <!-- indent 들여쓰기:4칸 기본 -->
+    <h1>D-TRAVEL riview</h1>
+    <!-- 전체적인 표의 사이즈는 밑에 width에서 설정 -->
+    <table border="2" width="50%">
+    <!--각 행의 넓이는 colgroup,col 태그에서 설정한다.  -->
+        <colgroup>
+            <col width="40%">
+            <col width="20%">
+            <col width="30%">
+    <!--마지막에는 값이 없어도 자동으로 설정됨 -->
+            <col>
+        </colgroup>
+        <thead>
+            <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <!-- disabled망가뜨린다. 못쓰게 만든다는 뜻 input에 많이 씀 -->
+    <!-- enable 사용을 허용한다(default)-->
+    <input type="text" value="정다겸" disabled><br>
+    <textarea name="article" id="article" cols="30" rows="10" disabled >
+        <br>
+        <input type="checkbox" disabled>
+        <br>
+        <input type="text" placeholder="이름을 작성해주세요">
+<!-- id,name,value -->
+<!-- id는 해당 페이지 태그에 부여하는 주민번호와 같다.
+특성: 유일해야 한다. 어디에나 부여 가능하다
+목적: 구분과 선택(CSS) -->
+
+<!-- name은 서버에 보낼때 사용하는 값의 이름(key) -->
+<!-- ex> 알파카 : 안녕하세요 -->
+<!-- ex> key(이름) : value(값) -->
+<!-- value 는 key에 대응하는 값이다. -->
+    <input type="text" value="정다겸" id="mamber-id" name="">
+
+
+
+    <label for="#id">여행지</label>
+    <input type="radio" name="travel-spot" id="travel-spot" value="gangreung">
+    <label for="gangreung">강릉</label>
+<!-- 버그잡기 -->
+
+
+
+
+
+</body>
+</html>

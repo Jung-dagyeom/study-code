@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>selector</title>
+<style>
+    /* 우선순위 5위 */
+    /* !important는 빈번하게 사용 금지, 급하거나 절대적인 규칙일때 중요할때만 사용! */
+    p{
+        color: green !important
+
+    }
+    /* 우선순위 4위 */
+    .sample1{
+        color: hotpink;
+    }
+    /* 우선순위 3위 */
+    #sample2{
+        color: blue;
+    }
+    /* inline style 우선순위 2위 */
+
+</style>
+</head>
+<body>
+    <div>
+        <p>안녕하세요 셀렉터 우선순위를 알아봅시다.</p>
+        <p class="sample1">안녕하세요 셀렉터 우선순위를 알아봅시다.</p>
+        <p id="sample2">안녕하세요 셀렉터 우선순위를 알아봅시다.</p>
+        <p class="sample1" id="sample2" style="color: brown;">안녕하세요 셀렉터 우선순위를 알아봅시다.</p>
+    </div>
+    
+</body>
+</html>

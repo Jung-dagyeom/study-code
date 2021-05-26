@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title></title>
+</head>
+<body>
+    <fieldset>
+        <legend>입사지원 정보</legend>
+        <p>
+        <label for="id">아이디(e-mail) :</label>
+        <input type="text"id="id" required> @
+        <select name="email" id="email">
+            <option value="">선택</option>
+            <option value="NAVER">naver.com</option>
+            <option value="GOOGLE">gmail.com</option>
+            
+        </select>
+        </p>
+        
+        <p>
+            <label for="password">비밀번호 :</label>
+            <input type="text" id="password" required>
+        </p>
+        
+        <label for="phonenumber">휴대전화 :</label>
+        <select name="phonenumber" id="phonenumber">
+            <option value="">통신사 선택</option>
+            <option value="SK">SK</option>
+            <option value="KT">KT</option>
+            <option value="LG">LG</option>
+        </select>  
+            <input type="text" id="number">
+            <input type="text" id="number">
+            <input type="text" id="number">
+        
+        <p>
+            <label for="Job Group">직군</label>
+            <input type="radio" id="designer" name="job">
+            <label for="designer">디자이너</label>
+            <input type="radio" id="developer" name="job"> 
+            <label for="developer">개발자</label>
+        </p>
+        <p>
+            <label for="Hope Work Place">희망근무지(* 복수선택 가능) :</label>
+            <input type="checkbox" id="LA" name="country"><label for="LA">LA</label>
+            <input type="checkbox" id="Japan" name="country"><label for="Japan">도쿄</label>
+            <input type="checkbox" id="England" name="country"><label for="England">런던</label>
+            <input type="checkbox" id="Singapore" name="country"><label for="Singapore">싱가폴</label>
+        </p>
+    </fieldset>
+    <br>
+    <input type="button" value="입사지원완료">
+
+</body>
+</html>

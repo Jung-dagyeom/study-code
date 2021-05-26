@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>fullscreen slider</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    ul {
+        list-style: none;
+    }
+    /* 전체 갑싸는 부분 */
+    .sliderWrap {
+        height: 100vh;
+    }
+    input[id=tab1]:checked ~ .sliderVeiw .sliderRoll {
+        left: 0;
+    }
+    input[id=tab2]:checked ~ .sliderVeiw .sliderRoll {
+        left: -100%;
+    }
+    input[id=tab3]:checked ~ .sliderVeiw .sliderRoll {
+        left: -200%;
+    }
+    input[id=tab1]:checked ~ .sliderVeiw .btnBox label[for=tab1],
+    input[id=tab2]:checked ~ .sliderVeiw .btnBox label[for=tab2],
+    input[id=tab3]:checked ~ .sliderVeiw .btnBox label[for=tab3] 
+    {
+        background: gold;
+        width: 50px;
+    }
+    /* 보여지는 부분 */
+    .sliderVeiw {
+        height: 100%;
+        overflow: hidden;
+    }
+    /* rolling part */
+    .sliderRoll {
+        position: relative;
+        width: 300%;
+        height: 100%;
+        font-size: 0;
+        transition: all 300ms;
+    }
+
+    .sliderItem {
+        display: inline-block;
+        height: 100%;
+        width: 33.3333%;
+        font-size: 1rem;
+    }
+    .sliderItem:nth-child(1) {
+        background: url(./image/planet-581239_1280.jpg) no-repeat center/cover;
+    }
+    .sliderItem:nth-child(2) {
+        background: url(./image/technology-1283624_1280.jpg) no-repeat center/cover;
+    }
+    .sliderItem:nth-child(3) {
+        background: url(./image/mountains-276995_1280.jpg) no-repeat center/cover;
+    }
+
+    .item_gold {
+        background: gold;
+    }
+    .item_tomato {
+        background: tomato;
+    }
+    .item_green {
+        background: green;
+    }
+    .btnBox {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    input[name=tab] {
+        display: none;
+    }
+    label[for*=tab] {
+        display: inline-block;
+        width: 30px;
+        height: 20px;
+        background: #ddd;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <div class="sliderWrap">
+
+        <input type="radio" name="tab" id="tab1" checked>
+        <input type="radio" name="tab" id="tab2">
+        <input type="radio" name="tab" id="tab3">
+        
+        <div class="sliderVeiw">
+            <ul class="sliderRoll">
+                <!-- left: % 부모크기에 대한 %값이다. -->
+                <li class="sliderItem item_gold">
+                    <div class="sliderItemDesc">
+                        <h1>content1</h1>
+                    </div>
+                </li>
+                <li class="sliderItem item_tomato">
+                    <div class="sliderItemDesc">
+                        <h1>content1</h1>
+                    </div>
+                </li>
+                <li class="sliderItem item_green">
+                    <div class="sliderItemDesc">
+                        <h1>content1</h1>
+                    </div>
+                </li>
+            </ul>
+            <div class="btnBox">
+                <label for="tab1"></label>
+                <label for="tab2"></label>
+                <label for="tab3"></label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

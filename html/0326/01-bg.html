@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>bg practice</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    .container {
+        width: 1100px;
+        height: 1100px;
+        border: 10px  solid blue;
+        margin: 0 auto;
+        padding: 30px;
+        /* 배경 기본 세팅
+        img, no-repeat, cover, center */
+        /* background-image: url(image/KakaoTalk_20210209_233030905.jpg);
+        background-repeat: no-repeat;
+        background-size:200px 200px;
+        background-position:right ; */
+        /* 
+        1. px
+        2. %
+        3. position name
+         */
+        /* 이렇게 한꺼번에 적용 가능 중요** */
+         /* background:
+          url(image/KakaoTalk_20210210_013959706.jpg) left top,
+          url(image/KakaoTalk_20210210_013959706.jpg) center top,
+          url(image/KakaoTalk_20210210_013959706.jpg) right top,
+          url(image/KakaoTalk_20210210_013959706.jpg) left,
+          url(image/KakaoTalk_20210210_013959706.jpg) center;
+         background-size: 200px 200px;
+         background-repeat: no-repeat; */
+
+        background:url(image/KakaoTalk_20210210_013959706.jpg) no-repeat center/cover;
+        /* origin은 padding 값이 기본임 */
+    
+        background-clip: padding-box;
+        color: seashell;
+
+  
+  
+    }
+</style>
+</head>
+<body>
+    <!-- 
+        1. image : contents
+        2. bg img : context
+     -->
+    <div class="container">
+    
+    </div>
+
+</body>
+</html>

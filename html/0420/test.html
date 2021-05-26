@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> review </title>
+<style>
+    /* position: 위치
+     property:
+     static(정적인) : initial value t,l,b,r 쓸 수 없다.
+     relative(상대적인) : 본인 위치에서 시작한다.
+     absolute(절대적인) : body를 기준으로 한다. 날라다닌다. 붕뜬다.
+     fixed(고정) : body를 기준으로 한다. 날라다닌다. 붕뜬다.
+                   하지만 scroll때도 항상 같은 위치에 고정된다.
+     */
+  .container {
+      width: 500px;
+      height: 500px;
+      background: pink;
+      /* border: 1px solid #000; */
+  }
+  .box {
+      position: absolute;
+      top: 30px;
+      left: 0;
+      width: 100px;
+      height: 100px;
+      background: skyblue;
+
+  }
+
+</style>
+        
+</div>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

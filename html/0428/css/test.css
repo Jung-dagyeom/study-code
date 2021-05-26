@@ -1,0 +1,20 @@
+
+input[id=modalBtn]:checked ~ .modalContainer {
+    display: block;
+}
+/* slider event */
+input[id=tab1]:checked ~ .sliderView .sliderList {
+    left: 0;
+}
+input[id=tab2]:checked ~ .sliderView .sliderList {
+    left: -400px;
+}
+input[id=tab3]:checked ~ .sliderView .sliderList {
+    left: -800px;
+}
+input[id=tab1]:checked ~ .sliderView .tabBtnBox label[for=tab1],
+input[id=tab2]:checked ~ .sliderView .tabBtnBox label[for=tab2],
+input[id=tab3]:checked ~ .sliderView .tabBtnBox label[for=tab3]
+{
+    background: coral;
+}

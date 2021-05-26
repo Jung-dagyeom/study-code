@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>virtual-selector</title>
+<style>
+    /* 첫번째 자식 요소를 선택 */
+    ul li:first-child{
+        color: royalblue;
+        font-size: 50px;
+    }
+    /* 두번째 자식 요소를 선택 */
+    ul li:nth-child(2){
+        color: hotpink;
+        font-size: 40px;
+    }
+    /* 세번째 자식 요소를 선택 */
+    ul li:nth-child(3){
+        color: red;
+        font-size: 30px;
+    }
+    /* 뒤에서 자식 요소를 선택 */
+    ul li:last-child{
+        color: green;
+        font-size: 20px;
+    }
+    /* 홀수 번째 선택 */
+    div :nth-child(odd){
+        color: green;
+        font-size: 30px;
+    }
+    /* 짝수 번째 선택 */
+    div p:nth-child(even){
+        color: red;
+        font-size: 30px;
+    }
+</style>
+</head>
+<body>
+    <h1>가상 셀렉터 nth-child</h1>
+<ul>
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li>Lorem ipsum dolor sit amet.</li>
+</ul>
+    <!-- <h1>nth-child(odd),(even) 사용</h1> -->
+</body>
+</html>

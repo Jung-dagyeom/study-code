@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/* sample reset.css */
+:root {
+    --primary-color: #333;
+    --secondary-color: #999;
+}
+h1 {
+    margin: 0;
+}
+p {
+    margin: 0;
+}
+a {
+    color: inherit;
+    display: inline-block;
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+/* layout */
+.inner {
+    max-width: 1600px;
+}

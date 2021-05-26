@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>skew</title>
+<style>
+    body {
+        perspective: 1000px;
+    }
+    .box {
+        width: 300px;
+        height: 300px;
+        border: 10px solid #000;
+        margin: 100px auto;
+    }
+    img {
+        max-width:  100%;
+        height: 100%;
+        transition: all .5s;
+    }
+    .box:hover img {
+        transform: skew(20deg);
+    }
+</style>
+</head>
+<body>
+    <div class="box">
+        <img src="./image/amurtiger-1975790_640.jpg" alt="호랑이 이미지">
+    </div>
+</body>
+</html>

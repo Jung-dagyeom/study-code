@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>self banner</title>
+<style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .banner {
+        text-align: center;
+    }
+    .bannerbox {
+        width: 400px;
+        height: 100px;
+        border: 1px solid #000;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    img {
+        width: 400px;
+        height: 100px;
+    }
+    .scroll {
+        width: 1200px;
+        font-size: 0;
+        animation: scroll 5s infinite alternate;
+    }
+    @keyframes scroll {
+        0% {
+            margin-left: 0px;
+        }
+        50% {
+            margin-left: -400px;
+        }
+        100% {
+            margin-left: -800px;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="banner">
+        <h1>self banner</h1>
+        <div class="bannerbox">
+            <div class="scroll">
+                <img src="./image/20210407_113536.png" alt="">
+                <img src="./image/20210407_113548.png" alt="">
+                <img src="./image/20210407_113557.png" alt="">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

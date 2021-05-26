@@ -1,0 +1,77 @@
+@charset "utf-8";
+@import "reset.css";
+@import "main.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css";
+
+.skewbox .container, .unskewbox .container {
+    padding: 0 5rem;
+}
+.skewbox {
+    padding: 10rem 0;
+    background: var(--primary-color);
+    color: var(--primary-bg) ;
+    transform: skewY(-10deg) translateY(-5.2rem);
+    text-transform: uppercase;
+    /* line-height는 상속된다; */
+    /* 본인폰트의 배수, 폰트크기에 대한 1 */
+    /* 1em은 부모요소 폰트크기에 대한 1em =16px  */
+    line-height: 1.8;
+}
+.skewbox .container {
+    transform: skewY(10deg);
+    border: 1px solid #000;
+}
+.animate__fadeInLeft {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+.skewbox span {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: var(--primary-color);
+    background: var(--primary-bg);
+    animation-duration: 5s;
+}
+.skewbox span:nth-child(1) {
+    animation-delay: .2s ;
+}
+.skewbox span:nth-child(2) {
+    animation-delay: .4s ;
+}
+.skewbox span:nth-child(3) {
+    animation-delay: .6s ;
+}
+.skewbox span:nth-child(4) {
+    animation-delay: .8s ;
+}
+.skewbox span:nth-child(5) {
+    animation-delay: 1s ;
+}
+.skewbox span:nth-child(6) {
+    animation-delay: 1.2s ;
+}
+.skewbox .gohome {
+    border: 1px solid var(--primary-bg);
+    text-align: right;
+    border-radius: 20px;
+    padding: 0.5em 1em;
+    margin-top: 1rem;
+}
+.skewbox .gohome:hover {
+    color: var(--primary-color);
+    background: var(--primary-bg);
+    opacity: .5;
+}
+.unskewbox {
+   text-align: right;
+}
+.unskewbox h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+
+}

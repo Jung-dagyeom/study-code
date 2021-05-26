@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>position basic</title>
+<style>
+    .container {
+        border: 1px solid #000;
+        padding: 1rem;
+        color: #fff;
+        font-size: 1.5rem;
+        width: 600px;
+        height: 600px;
+    }
+    .box {
+        background: skyblue;
+        width: 100px;
+        height: 100px;
+        border: 1px solid #000;
+    }
+    .static {
+        position: static;
+        background: gold;
+        /* top: 10%;
+        left: 10%; */
+        /* default value다. top이나left를 줘도 소용이 없다.*/
+    }
+    .relative {
+        /* 본인의 최초 위치가 기준이 된다. */
+        position: relative;
+        background: crimson;
+        /* top: 200%; */
+        /* left: 200%; */
+        /* motion에 사용하는게 기본이다. */
+        /* transform: translate(100px, 100px)과
+        position top, left 100px 주는 것과 같다. */
+
+    }
+    .absolute {
+        /* 1. 공중에 뜬다(겹쳐졌다)
+           2. inline-block 속성이 된다 (컨텐츠값이 기본값, 크기가 작아졌다)
+           3. scroll이 되면 사라진다 */
+           /* top, left가 우선순위가 높다  */
+        position: absolute;
+        background: purple;
+        /* width: 200px; */
+        /* height: 200px; */
+        /* top: 10%;
+        left: 10%; */
+
+    }
+    .fixed {
+         /* 1. 공중에 뜬다(겹쳐졌다)
+            2. inline-block 속성이 된다 (컨텐츠값이 기본값, 크기가 작아졌다)
+            3. scroll이 되어도 사라지지 않는다*/
+        background: coral;
+        position: fixed;
+        top: 0;
+        left: 0;
+        /* right: 0; */
+        /* bottom: 0; */
+    }
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">top</div>
+        <div class="box static">static</div>
+        <div class="box relative">relative</div>
+        <div class="box absolute">absolute</div>
+        <div class="box fixed">fixed</div>
+        <div class="box bottom">bottom</div>
+        <div class="box bottom">bottom</div>
+    </div>
+</body>
+</html>

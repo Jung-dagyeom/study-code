@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>pseudo selector</title>
+<style>
+    .box {
+        width: 300px;
+        height: 300px;
+        background: gold;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);    
+    }
+    /*가상셀렉터*/
+    /* position:absolute 하면 inline-block이 되니까 display로 바꿔줄 필요 없다. */
+    .box::after, .box::before {
+        content: "test";
+        background: green;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        transform: translateY(-50%);
+        top: 50%;
+    }
+    .box::after {
+        left: 100%;
+    }
+    .box::before {
+        background: coral;
+        right: 100%;
+    }
+</style>
+</head>
+<body>
+    <div class="box">
+    </div>
+</body>
+</html>

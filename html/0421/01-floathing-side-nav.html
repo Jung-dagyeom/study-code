@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>floathing side nav</title>
+<style>
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        list-style: none;
+    }
+    /* button */
+    input[id=menubtn] {
+        display: none;
+    }
+    /* sidenav */
+    .sidenav {
+        background: pink;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 100%;
+        /* transforem으로 이동하는게 유지보수에 용이하다. */
+        transform: translate(100%);
+        transition: all .8s;
+    }
+    .sidenav label {
+        position: absolute;
+        background: pink;
+        width: 100px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        top: 100px;
+        right: 100%;
+        border-radius: 30px 0 0 30px;
+
+    }
+    .sidenav label:hover {
+        background: #999;
+        color: #fff;
+        cursor: pointer;
+    }
+    .sidenavmenu li a {
+        display: block;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+    }
+    .sidenavmenu li a:hover {
+        background: #999;
+        color: #fff;
+        cursor: pointer;
+    }
+    /* check event */
+    input[id="menubtn"]:checked + .sidenav {
+        transform: translate(0);
+    }
+</style>
+</head>
+<body>
+    <input type="checkbox" id="menubtn">
+    <nav class="sidenav">
+        <label for="menubtn">menu</label>
+        <ul class="sidenavmenu">
+            <li><a href="#">sub-manu1</a></li>
+            <li><a href="#">sub-manu2</a></li>
+            <li><a href="#">sub-manu3</a></li>
+            <li><a href="#">sub-manu4</a></li>
+            <li><a href="#">sub-manu5</a></li>
+            <li><a href="#">sub-manu6</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

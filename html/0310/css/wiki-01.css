@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrap{
+    padding: 20px;
+}
+header p{
+    margin-bottom: 20px;
+}
+.manage{
+    margin-bottom: 10px;
+    border: 1px solid skyblue;
+    padding: 10px;
+}
+.manage h1{
+    margin-bottom: 10px;
+}
+.delete{
+    margin-bottom: 10px;
+    border: 1px solid skyblue;
+    padding: 20px;
+}
+.delete h4{
+    background-color: #bbddff;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.manager{
+    margin-bottom: 10px;
+    border: 1px solid skyblue;
+    padding: 20px;
+}
+.manager h4{
+    background-color: #bbddff;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.manager h3 h6{
+    border: 1px solid #000;
+    box-shadow: 10px;
+    font-size: 20px;
+    width: 200px;
+    height: 100px;
+}

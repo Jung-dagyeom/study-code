@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+
+<title>box-</title>
+<style>
+    .box1{
+        width: 600px;
+        height: 100px;
+        background-color: skyblue;
+        padding:20px ;
+        border: 10px solid coral;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+    .box2{
+        width: 600px;
+        height: 100px;
+        background-color: skyblue; 
+        padding:20px ;
+        border: 10px solid coral;
+    }
+</style>
+</head>
+<body>
+    <div class="box1">
+        box-sizing: border-box 지정 o
+    </div>
+    <div class="box2">
+        box-sizing: border-box 지정 x    
+    </div>
+</body>
+</html>
+
+
+
+
+<!-- box-sizing: border-box;를 주었을때 가로사이즈는 지정한
+        <b>widht 600px</b> -->
+         <!-- box-sizing: border-box;를 주지 않았을때는 widht와 height가
+        padding값과 border값이 더해짐에 따라 늘어나 있는 걸 볼 수 있다. -->

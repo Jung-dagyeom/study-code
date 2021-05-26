@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>join-company test</title>
+</head>
+<body>
+  
+    <h1>join company</h1>
+    <fieldset>
+        <legend>입사지원</legend>
+    <p>
+        <label for="email">아이디(e-mail) :</label>
+        <input type="text" id="email">
+        <label for="select-email">@</label>
+        <select name="email" id="select-email">
+            <option value="">선택</option>
+            <option value="naver.com">naver.com</option>
+            <option value="naver.com">google.com</option>
+        </select>
+    </p>
+    <p>
+        <!-- label은 input의 옷의 택같은것 -->
+        <label for="password">비밀번호 :</label>
+        <input type="password" id="password">
+    </p>
+    <p>
+        <label for="mobile-company">통신사</label>
+        <select name="mobile-company" id="mobile-company">
+            <option value="sk">sk</option>
+            <option value="kt">kt</option>
+            <option value="lg">lg</option>
+        </select>
+        <input type="tel" maxlength="3">
+        <input type="text" maxlength="4">
+        <input type="text" maxlength="4"> 
+    </p>
+    <p>
+        <!--label에 for 칸은 글씨 클릭해도 커서가 칸으로 갈 수 있게 해주는 것
+        직군은 굳이 넣을 필요가 없음 클릭해서 커서 이동 안해도 되기 때문 -->
+        <label>직군 :</label>
+        <input type="radio" name="job" id="designer"><label for="designer">개발자</label>
+        <input type="radio" name="job" id="publisher"><label for="publisher">퍼블리셔<label>
+    </p>
+    <p>
+        <label>희망 근무지</label>
+        <input type="checkbox" name="company-place" id="la"><label for="la">LA</label>
+        <input type="checkbox" name="company-place" id="la"><label for="do">도쿄</label>
+        <input type="checkbox" name="company-place" id="london"><label for="london">런던</label>
+        <input type="checkbox" name="company-place" id="Singapole"><label for="Singapole">싱가폴</label>
+    </p>
+    </fieldset>
+    <!-- 모양은 동일하나 submit은 form태그 안에서만 작동한다. 우리는 이걸 써야함함 -->
+    <input type="submit" value="입사지원 완료">
+     <!-- 모양은 동일하나 button을 의미한다..  --> 
+    <input type="button" value="입사지원 완료">
+</body>
+</html>

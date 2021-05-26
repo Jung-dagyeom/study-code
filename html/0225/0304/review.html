@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>0304- review</title>
+<style>
+    /* 전체 셀렉터 */
+    *{color: deeppink;}
+    /* 태그 셀렉터 */
+    p{color: deepskyblue;}
+    /* id 셀렉터 */
+    #sample1{
+        color: gold;
+    }
+    /* class 셀렉터 */
+    .sample1{
+        color: green;
+    }
+    /*어트리뷰트 셀렉터  */
+    [title="this is title"]{
+        color: hotpink;
+    }
+    /* 복합 셀렉터 */
+    p#test1, p.test2{
+        font-size: 30px;
+        color: indigo;
+    }
+
+</style>
+</head>
+<body>
+    <p id="sample1"> 안녕안녕 오늘도 화이팅</p>
+    <p class="sample1"> 안녕안녕 오늘도 화이팅</p>
+    <p title="this is title"> 안녕안녕 오늘도 화이팅</p>
+    <p id="test1"> 안녕안녕 오늘도 화이팅</p>
+    <p class="test2"> 안녕안녕 오늘도 화이팅</p>
+
+</body>
+</html>
+
+/* color:#fff000;font-size: 100px;text-shadow: 3px 3px darkolivegreen; -->
+} */

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>around ball</title>
+<style>
+    .wrap {
+        width: 600px;
+        margin: 200px auto;
+    }
+    .box {
+        width: 600px;
+        height: 600px;
+        background: pink;
+    }
+    .ball {
+        width: 300px;
+        height: 300px;
+        background: yellow;
+        border-radius: 50%;
+        animation: around 3s infinite alternate-reverse linear;
+    }
+    @keyframes around {
+        0%, 100% {
+            transform: translate(0, 0);
+        }
+        25% {
+            transform: translate(100%, 0);
+        }
+        50% {
+            transform: translate(100%, 100%);
+            background: coral;
+        }
+        75% {
+            transform: translate(0, 100%);
+            background: orangered;
+        }
+    }
+    }
+</style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box">
+            <div class="ball"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!-- 
+* 작성자 : 정다겸
+* 일  시 : 2021. 04. 02
+* 내  용 : scale 적용 화면
+* 참고 : 010-1234-5678
+*
+*
+
+ -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>scale</title>
+<style>
+    .box {
+        margin: 200px auto;
+        width: 300px;
+        height: 200px;
+        background: gold;
+        border: 10px solid palevioletred;
+    }
+    /* 
+     참고 : scale을 1.5로 잡았습니다.
+     이것은 00디자이너와 2021. 04. 02 기획 합의된 내용임
+     -이렇게 작성하는것은 협업에서 예의고 실력이다.
+      */
+    img {
+        max-width: 100%;
+        /* opacity: .5; */
+        transition: .5s;
+    }
+    .box:hover img {
+        /* default: 1 */
+        /* scale은 마이너스 값 없다. */
+        transform: scaleX(0.5);
+    }
+</style>
+</head>
+<body>
+    <div class="box">
+        <img src="./image/amurtiger-1975790_640.jpg" alt="">
+    </div>
+
+
+</body>
+</html>

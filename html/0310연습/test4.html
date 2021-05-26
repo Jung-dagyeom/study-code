@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>test -4 form</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>개인정보</legend>
+            <p>
+                <label for="name">이름 :</label>
+                <input type="text" name="name" id="name" required>
+            </p>
+            <p>
+                <label for="ege">나이 :</label>
+                <input type="text" name="ege" id="ege" required>
+            </p>
+            <p>
+                <label>성별 :</label>
+                <input type="radio" name="gender" id="woman">
+                <label for="woman">여자</label>
+                <input type="radio" name="gender" id="man">
+                <label for="man">남자</label>
+
+            </p>
+            <p>
+                <label for="country">거주지 :</label>
+                <select name="country" id="country" required>
+                    <option value="">선택</option>
+                    <option value="korea">한국</option>
+                    <option value="japen">일본</option>
+                    <option value="china">중국</option>
+                </select>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>기타 정보</legend>
+            <p>
+                <label>취미</label>
+                <input type="checkbox" id="soccer" name="hobby"><label for="soccer">축구</label>
+                <input type="checkbox" id="baseball" name="hobby"><label for="baseball">야구</label>
+                <input type="checkbox" id="basketball" name="hobby"><label for="basketball">농구</label>
+            </p>
+            <p>
+                <label>특기</label>
+                <input type="checkbox" id="cook" name="special"><label for="cook">요리</label>
+                <input type="checkbox" id="game" name="special"><label for="game">게임</label>
+                <input type="checkbox" id="picture" name="special"><label for="picture">그림</label>
+            </p>
+            <p>
+                <label for="selfintroduce">자기소개</label><br>
+                <textarea name="selfintroduce" id="selfintroduce" cols="30" rows="10" placeholder="여기 적어주세요."></textarea>
+            </p>
+        </fieldset>
+        <br>
+            <input type="submit" value="회원가입완료"> 
+        <fieldset>
+            <legend>입사지원정보</legend>
+            <p>
+                <label for="memderid">아이디(e-mail) :</label>
+                <input type="text" id="memderid"> @
+                <select name="email" id="email">
+                    <option value="">선택</option>
+                    <option value="naver">naver.com</option>
+                    <option value="google">gmail.com</option>
+                </select>
+            </p>
+            <p>
+                <label for="password">비밀번호 :</label>
+                <input type="password" id="password">
+            </p>
+            <p>
+                <label for="phonenumber">휴대전화 :</label>
+                <select name="agency" id="agency">
+                    <option value="">선택</option>
+                    <option value="sk">sk</option>
+                    <option value="kt">kt</option>
+                    <option value="lg">lg</option>
+                </select>
+                <input type="text" maxlength="3">-
+                <input type="text" maxlength="4">-
+                <input type="text" maxlength="4">
+            </p>
+            <p>
+                <label>직군 :</label>
+                <input type="radio" name="job" id="designer">
+                <label for="designer">디자이너</label>
+                <input type="radio" name="job" id="developer">
+                <label for="developer">개발자</label>
+            </p>
+            <p>
+                <label>희만근무지(*복수선택 가능) :</label>
+                <input type="checkbox" name="country" id="la">
+                <label for="ia">LA</label>
+                <input type="checkbox" name="country" id="tokyo">
+                <label for="tokyo">도쿄</label>
+                <input type="checkbox" name="country" id="london">
+                <label for="london">런던</label>
+                <input type="checkbox" name="country" id="singapore">
+                <label for="singapore">싱가폴</label>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

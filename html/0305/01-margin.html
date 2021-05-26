@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>margin practice</title>
+<style>
+    div{
+        /* W100 하고 teb누르면 자동완성 */
+        width: 100px;
+        height: 100px;
+        background-color: coral;
+        /* top right bottom left  */
+        /* margin: 50px 30px 20px 30px; */
+        /* margin: 50px 50px 50px; */
+        /* margin: 50px 50px; */
+        /* margin: 20px; */
+        border: 1px solid black;
+    }
+    /* margin은 겹치면 병목현상 일어난다. 위/아래 만, 좌/우는
+    병목현상이 일어나지 않는다. */
+    .box1{
+        margin: 0 0 10px 0 ;
+    
+        /* padding: 30px 30px 30px 30px; */
+    }
+    .box2{
+        margin: 20px 10px ;
+        padding: 20px 30px;
+    }
+    .box3{
+        margin: 30px;
+        padding: 30px;
+    }
+    .box4{
+        margin: 30px;
+        padding: 10px 20px 30px 40px;
+    }
+</style>
+</head>
+<body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+    <div class="box4">box4</div>
+</body>
+</html>

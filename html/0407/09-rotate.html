@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>rotate</title>
+<style>
+    body {
+        text-align: center;
+    }
+    img {
+        width: 200px;
+        animation: rotate 2s infinite;
+    }
+    img:nth-child(1) {
+        background-color: turquoise;
+    }
+    img:nth-child(2) {
+        background-color: palevioletred;
+    }
+    img:nth-child(3) {
+        background-color: yellow;
+    }
+    @keyframes rotate {
+        from {
+            filter: hue-rotate(0deg) ;
+        }
+        to {
+            filter: hue-rotate(160deg);
+        }
+    }
+</style>
+</head>
+<body>
+    <img src="./image/KakaoTalk_20210226_151717694-removebg-preview.png" alt="">
+    <img src="./image/KakaoTalk_20210226_151717694-removebg-preview.png" alt="">
+    <img src="./image/KakaoTalk_20210226_151717694-removebg-preview.png" alt="">
+
+</body>
+</html>

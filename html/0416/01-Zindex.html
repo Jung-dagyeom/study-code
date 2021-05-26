@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>z-index</title>
+<style>
+    .container {
+
+    }
+    div {
+        border: 1px solid #000;
+    }
+    /* 
+    1. 오른쪽이나 뒤에 써진 ele가 우선순위가 높다.
+    2. inline-block이 block보다 우선순위가 높다.
+     */
+    .box1 {
+        /* absolute하면 붕 뜬다.*/
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background: gold;
+        left: 100px;
+     /* 1.z-index는 우선순위 정해준다. (숫자가 큰 녀석이 앞으로 옴)
+        2. 음수 값이 가능하다.
+        3. 0이 기본이다.(하지만, default:auto다. 그냥 0으로 생각하자)
+        4. 숫자의 범위는 상관없이 쓰면된다.*/
+        z-index: -1;
+    }
+    .box2 {
+        /* 둘 다 주면 뒤에써진 ele가 우선순위가 높아서 위로 올라온다.  */
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background: crimson;
+        left: 200px;
+        top: 100px;
+    }
+    .ball1 {
+        /* ball1만 올리고 싶으면 따로 잡아줘야함 */
+        position: absolute;
+        left: 200px;
+        top: 50px;
+        width: 100px;
+        height: 100px;
+        background: skyblue;
+    }
+    /* .ball2 {
+        width: 100px;
+        height: 100px;
+        background: skyblue;
+    } */
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+        </div>
+        <div class="box2">
+            <div class="ball2"></div>
+        </div>
+        <div class="ball1"></div>
+    </div>
+
+</body>
+</html>

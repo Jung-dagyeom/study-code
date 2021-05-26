@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/* root, html */
+/* 0 */
+:root {
+    /* 변수명: value 최상위 개체!*/
+    /* 반복적으로 사용해야 하는 propertyy value */
+    --primary-bg: #2BAE66;
+    --primary-color: #FCF6F5;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background:var(--primary-bg);
+    color: var(--primary-color);
+}
+*:after, *:before {
+    display: inline-block;
+}
+
+img {
+    /* 이미지크기만큼 꽉 채워! max-widht */
+    max-width: 100%;
+}
+a {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+h1, h2, h3 {
+    font-weight: normal;
+}
+/* layout */
+
+.inner {
+    width: 900px;
+    margin: 0 auto;
+}

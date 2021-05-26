@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>rolling banner</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .banner {
+        text-align: center;
+    }
+    .bannerbox {
+        width: 400px;
+        height: 200px;
+        border: 1px solid #000;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    img {
+        width: 400px;
+        height: 200px;
+    }
+    .scroll {
+        width: 1200px;
+        font-size: 0;
+        animation: scroll 5s infinite alternate;
+    }
+    @keyframes scroll {
+        0% {
+            margin-left: 0px;
+        }
+        50% {
+            margin-left: -400px;
+        }
+        100% {
+            margin-left: -800px;
+        }
+    }
+
+</style>
+</head>
+<body>
+    <div class="banner">
+        <h1>scroll banner test</h1>
+        <!-- 보여지는 영역 -->
+        <div class="bannerbox">
+            <!-- 움직여지는 영역 -->
+            <div class="scroll">
+                <img src="./image/banner-1.jpg" alt="">
+                <img src="./image/banner-2.jpg" alt="">
+                <img src="./image/banner-3.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

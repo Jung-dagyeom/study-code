@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>virtual-selector</title>
+<style>
+    /* a링크안에 색상을 주어야 바뀐다. */
+    div{
+        font-size: 100px;
+        background-color: coral;
+        color: #fff;
+    }
+    a{
+        
+        font-size:  100px;
+        /* color: black; */
+    }
+    /* 가상셀렉터 방문하지 않은 상태일때를 선택하는 것 방문안한 사이트 색 바뀜*/
+    a:link{
+        color: #000;
+    }
+    /* 방문한 상태일때 방문한 사이트만 색 바뀜 */
+    a:visited{
+        color: blueviolet;
+    }
+    /* 마우스가 올라간 상태일 때 */
+    a:hover{
+        background-color: cornflowerblue;
+    }
+    /* 클릭 된 상태일 때 */
+    a:active {
+        background-color: red;
+    }
+    
+    a:focus{
+        background-color: yellow;
+    }
+</style>
+</head>
+<body>
+    <h1>가상셀렉터</h1>
+    <div>
+        <a href="http://www.naver.com">naver</a>
+    </div>
+    <hr>
+    <a href="https://www.thehersheycompany.com/">hershes</a>
+    <hr>
+    <a href="https://www.yahoo.com/">yahoo</a>
+    <hr>
+    <a href="https://www.nate.com/">nate</a>
+
+</body>
+</html>

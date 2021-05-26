@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>transtion prac</title>
+<style>
+    .container {
+        border: 1px solid #000;
+    }
+    .item {
+        width: 10%;
+        height: 100px;
+        background-color: royalblue;
+        cursor: pointer;
+        /* 지속되는 기간 */
+        /* m seconds */
+        /* transition-duration: 2s; */
+        /* transition-delay: .5s; */
+        /* 선형적인, 점진적인 꾸준하게 올라가라*/
+        /* transition-timing-function: linear; */
+        /* transition-timing-function: ease; */
+        /* transition-duration: 1s; */
+
+        /* transition: width 1s linear, height 1s 1s, font-size 1s 2s; */
+        /* 이렇게 모아서 잘씀 */
+        /* property, duration, delay, function */
+        /*  property를 all로 주면 전체로 다 됨 */
+
+        /* transtion .5s를 주면 모든게 다 실행됨 앞에 all이 생략되어 있음 */
+        transition: .5s;
+    
+    }
+    .item:hover {
+        /* hover안에 transtion을 주면 돌아올때 뚝 끊어짐 그래서 잘 안쓰니까 주의 하자!
+        하지만 의도에 따라 달라질 수 있다. */
+        /* hover에 크기값과 폰트사이즈 주면 그만큼 늘어남 */
+        width: 100%;
+        height: 200px;
+        background-color: skyblue;
+        font-size: 5rem;
+        color: #fff;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            battery
+        </div>
+    </div>
+
+</body>
+</html>

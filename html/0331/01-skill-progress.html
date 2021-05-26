@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>skill-progress</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background: #000;
+        color: #999;
+        margin: 100px;
+    }
+    .container {
+        margin: 0 auto;
+        border: 1px solid #999;
+        width: 900px;
+        /* rem은 브라우저 루트 폰트사이즈이 *1임  */
+        padding: 1rem;
+    }
+    .container h1 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .container .item {
+        margin-bottom: 1rem;
+    }
+    .container .item p {
+        margin-bottom: 10px;
+    }
+    .container .item p span:first-child {
+        display: inline-block;
+        width: 100px;
+    }
+    .container .item .progress {
+        border: 1px solid #fff;
+        padding: 5px;
+    }
+    .container .item .progress-bar {
+        height: 20px;
+        background: linear-gradient(to right, gold, red); 
+    }
+    /* nth-of-type는 그 다음의 태그 선택을 하는 것
+    여기서는 h1이 먼저 있어서 이렇게 써준다. */
+    .container .item:nth-of-type(1) .progress-bar {
+        width: 70%;
+    }
+    .container .item:nth-of-type(2) .progress-bar {
+        width: 80%;
+    }
+    .container .item:nth-of-type(3) .progress-bar {
+        width: 50%;
+    }
+    .container .item:nth-of-type(4) .progress-bar {
+        width: 90%;
+    }
+    .container .item:nth-of-type(5) .progress-bar {
+        width: 60%;
+    }
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <h1>software skills</h1>
+        <div class="item">
+            <p>
+                <span>
+                    HTML5
+                </span>
+                <span>
+                    70%
+                </span>
+            </p>
+            <div class="progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+        <div class="item">
+            <p>
+                <span>
+                    HTML5
+                </span>
+                <span>
+                    70%
+                </span>
+            </p>
+            <div class="progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+        <div class="item">
+            <p>
+                <span>
+                    HTML5
+                </span>
+                <span>
+                    70%
+                </span>
+            </p>
+            <div class="progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+        <div class="item">
+            <p>
+                <span>
+                    photoshop
+                </span>
+                <span>
+                    70%
+                </span>
+            </p>
+            <div class="progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+        <div class="item">
+            <p>
+                <span>
+                    HTML5
+                </span>
+                <span>
+                    70%
+                </span>
+            </p>
+            <div class="progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>03-vertical-align</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    /* text니까 상속되기 때문에 img에 vertical top주면 옆에꺼기 상속됨 */
+    /* 무조건 vertocal-align:top으로 주자!! */
+   img {
+       width: 200px;
+       height: 200px;
+       vertical-align: top;
+   }
+   .txtbox {
+       display: inline-block;
+       background-color: slateblue;
+       vertical-align: top;
+       margin-top: 60px;
+   }
+   input {
+       background-color: slategray;
+       margin-top: 90px;
+   }
+   
+</style>
+</head>
+<body>
+    <div class="box">
+        <img src="./image/KakaoTalk_20210217_085309222.jpg" alt="">
+        <div class="txtbox">
+            <h1>title</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <input type="text">
+    </div>
+</body>
+</html>

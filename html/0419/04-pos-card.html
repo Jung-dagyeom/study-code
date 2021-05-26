@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>position card</title>
+<style>
+    h1,p {
+        margin: 5px;
+    }
+    .container {
+        /* border: 1px solid #000; */
+        text-align: center;
+    }
+    .container .carditem {
+        display: inline-block;
+        width: 300px;
+        padding: 20px;
+        
+    }
+    .container .carditem .desc {
+        background: #999;
+        border-radius: 20px;
+        padding: 10px;
+        text-align: center;
+        position: relative;
+        margin-bottom: 50px;
+        opacity: 0;
+        transition: .5s;
+    }
+    .container .carditem:hover .desc {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+    .container .carditem .desc:before {
+        content: '';
+        width: 20px;
+        height: 20px;
+        background:coral;
+        position: absolute;
+        bottom: -20px;
+        transform: rotate(45deg) translate(-50%, -50%);
+    }
+    .container .carditem img {
+        background:pink;
+        border-radius: 50%;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="carditem">
+            <div class="desc">
+                <h1>pikachu</h1>
+                <p>
+                    hello my friend?
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit?
+                </p>
+            </div>
+            <img src="./image/pikachu2_300x300.png" alt="">
+        </div>
+        <div class="carditem">
+            <div class="desc">
+                <h1>pikachu</h1>
+                <p>
+                    hello my friend?
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit?
+                </p>
+            </div>
+            <img src="./image/pikachu2_300x300.png" alt="">
+        </div>
+        <div class="carditem">
+            <div class="desc">
+                <h1>pikachu</h1>
+                <p>
+                    hello my friend?
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit?
+                </p>
+            </div>
+            <img src="./image/pikachu2_300x300.png" alt="">
+        </div>
+    </div>
+
+</body>
+</html>

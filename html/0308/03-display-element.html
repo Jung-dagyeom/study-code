@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>display-element</title>
+<style>
+    /*-- inline 태그와 속성 -->
+    <!-- 기본 너비 값은 컨텐츠의 너비값이다. 그래서
+         너비 값을 줘도 안된다. -->
+         <!-- 상하 마진도 가질 수 없다. 좌우만 가능, padding도 가능 --> */
+    span {
+        background-color: hotpink;
+        margin: 100px;
+    }
+    body{
+        margin: 10px;
+    }
+    .sample1{
+        background-color: hotpink;
+        padding: 30px;
+    }
+    .sample2{
+        background-color: green;
+        padding: 30px;
+        
+    }
+    .sample3{
+        background-color: green;
+        padding: 30px;
+    }
+    /* 버튼에 많이 쓰인다 > 넓이를 가진다. */
+    /* a는 inline 요소라서 넓이와 높이를 가질 수 없다. */
+    a {
+        display:block;
+        font-size: 40px;
+        margin: 10px;
+        /* 밑줄 없애기 */
+        text-decoration: none;
+        background-color:#19CE60 ;
+        color: lavender;
+        width: 200px;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        border-radius: 20px;
+        padding-bottom: 10px;
+        }
+        
+</style>
+</head>
+<body>
+<span class="sample1">sample Lorem, ipsum.</span>
+<span class="sample2">sample Lorem, ipsum.</span>
+<span class="sample3">green computer</span>
+
+<a href="https://google.com">GOOGLE</a>
+<a href="https://google.com">GOOGLE</a>
+<a href="https://kakao.com">KAKAO</a>
+<a href="https://naver.com">NAVER</a>
+</body>
+</html>

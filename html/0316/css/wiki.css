@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+#wrap {
+    padding: 20px;
+}
+/* commone */
+.bold {
+    font-weight: bold;
+}
+.primary-color {
+    color: #0645ad;
+}
+/* commone end */
+.titlebox h1 {
+    margin: 0;
+    font-weight: 400;
+}
+.titlebox hr {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+.titlebox p {
+    margin-top: 10px;
+}
+.request {
+    border: 1px solid skyblue;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+.riquest p {
+    line-height: 1.8em;
+}
+.request span {
+    color: #0645ad;
+    font-weight: bold;
+}
+.delete {
+    border: 1px solid skyblue;
+    padding-left: 20px;
+}

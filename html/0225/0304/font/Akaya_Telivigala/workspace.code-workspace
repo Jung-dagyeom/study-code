@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "Noto_Sans_KR",
+			"path": "..\\..\\..\\..\\0304\\Noto_Sans_KR"
+		},
+		{
+			"name": "0304",
+			"path": "..\\.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "0304"
+	}
+}

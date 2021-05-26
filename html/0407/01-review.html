@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>review - 1</title>
+<style>
+    .box {
+        width: 500px;
+        height: 200px;
+        background: #000;
+        margin: 0 auto;
+    }
+    .apple {
+        width: 50px;
+        height: 50px;
+        border: 1px solid #000;
+        background: red;
+        border-radius: 50%;
+        animation-name: move;
+        animation-duration: 3s;
+        /* -o-animation-delay: 2s; */
+        animation-iteration-count: 2;
+        animation-direction: alternate;
+        animation-fill-mode: both;
+    }
+    @keyframes move {
+        0%{
+            margin-left:100;
+            background: blue;
+        }
+        100% {
+            margin-left: 450PX;
+            height: 200px;
+        }
+    }
+
+</style>
+</head>
+<body>
+
+    <div class="box">
+        <div class="apple">
+
+        </div>
+    </div>
+
+</body>
+</html>
