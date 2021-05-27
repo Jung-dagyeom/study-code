@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>js 첫 걸음</title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+    }
+    .container {
+        width: 500px;
+        border: 1px solid #000;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .dark-mode {
+        background: #111;
+        color: #999;
+    }
+</style>
+</head>
+<body>
+    <button onclick="document.body.classList.toggle('dark-mode')">mode 전환</button>
+    <!-- toggle자리에 add를 하면 클릭 시 변화되지만 다시 돌아오지 않음 -->
+    <div class="container">
+        <h1>자바스크립트 다크 모드 테스트</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, consectetur quaerat suscipit dolorem tenetur corrupti cupiditate dignissimos ex, aperiam, eveniet molestias illo eaque libero perferendis nostrum! Suscipit obcaecati delectus sunt.</p>
+    </div>
+
+</body>
+</html>
