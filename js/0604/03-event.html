@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>event</title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    button {
+        border: none;
+        padding: 1rem;
+        background: #F5d042;
+        color: #0a174e;
+        cursor: pointer;
+    }
+    /* 셀렉팅 :  선택한다.
+       프로퍼티 :  선언하고 설정해준다. color: blue;
+    */
+</style>
+</head>
+<body>
+    <!-- js선언하는 inlien방식 : 실행코드가 길어졌을때 가독성이 떨어진다. -->
+        <!-- <button style="color: red; font-size: 1rem;" onclick="console.log('여기가 js inline작성')">
+            click
+        </button> -->
+        <!-- <button style="color: red; font-size: 1rem;" 
+        onclick="clicFunc()">
+            click
+        </button> -->
+        <!-- <button style="color: red; font-size: 1rem;" 
+        onclick="handleColor()">
+            click
+        </button>
+        <h1>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. A corrupti eaque ipsam eos commodi suscipit laborum, quidem nesciunt magni, cupiditate pariatur hic aliquam odio ab voluptatibus placeat incidunt, quae delectus!
+        </h1> -->
+        <!-- <script>
+            function clicFunc(){
+                alert("click")
+            }
+        </script>-->
+        <button class="btn-class" id="btn-id">
+            click
+        </button>
+        <button class="btn-class" id="btn-id">
+            click
+        </button>
+        <button class="btn-class" id="btn-id">
+            click
+        </button>
+        <script>
+            // 매개변수에 태그네임을 전달
+            // var btn = document.querySelector('button');
+            var btnclass = document.querySelectorAll('.btn-class');
+            // var btnid = document.querySelector('#btn-id');
+
+            console.log(btnclass[0]);
+            console.log(btnclass[1]);
+            console.log(btnclass[2]);
+            btnclass[2].style.color = "red";
+
+            
+            // console.log(btnid);
+
+            // console.dir(btn);
+            // btn.style.color = "blue";
+            // btn.style.width = "500px";
+
+            // function handleColor(){
+            //     var h1 = document.querySelector('h1');
+            //     console.log(h1);
+            //     console.dir(h1);
+            //     h1.style.color = "blue";
+            //     h1.style.background = "coral";
+
+            // }
+        </script>
+</body>
+</html>

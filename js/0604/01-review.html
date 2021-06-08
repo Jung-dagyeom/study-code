@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>js 전체 훍어보기 review</title>
+</head>
+<body>
+    <script>
+        // arr.length를 이용한 array for문
+            let classMember = ["물", 1, "바람", 4, null];
+
+            // console.log(classMember.length);
+        // index의 끝번호 = length -1;
+
+            // for(var i = 0; i < classMember.length - 1; i++){
+            //     console.log(classMember[i]);
+            // }
+
+
+        // 전역변수
+        // var a = "test"; 
+        // fotEach는 length를 알필요가 없다.
+        // 매개변수의 이름은 바뀌어도 된다. 순서가 중요하다. 다만 메세지를 전달할 수 있어야한다.
+        classMember.forEach(function(item, index, array){
+            console.log(item);
+            // console.log(index);
+            if(arr[index] === "바람") {
+            }
+                console.log(item)
+        
+                
+            }
+        );
+
+    </script>
+
+</body>
+</html>

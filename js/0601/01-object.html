@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>object</title>
+</head>
+<body>
+    <script>
+        var myYouChannel = {
+            channelName: "dagyeom's coding",
+            "open year": 2021,
+            isHot: true,
+            info: {
+                category: "코딩",
+                videoCount: 56
+            }
+        }
+        var cashDiary = {
+            date: 0610,
+            price: 4100,
+            brand: "starbucks",
+            when: "morning",
+            info: {
+                branch: "동성로점",
+                inGood: true,
+                taste: true
+            }
+        }
+        console.log(myYouChannel.info.category);
+        var str = "info"
+        console.log(myYouChannel.info.category);
+        console.log(myYouChannel["info"]["category"]);
+        console.log(myYouChannel.info["category"]);
+
+        // console.log(cashDiary);
+        // console.log(cashDiary.brand);
+        // console.log(cashDiary["brand"]);
+        // console.log(cashDiary.when);
+        // document.write(str);
+
+
+        var JungDagyeom = {
+            name: '정다겸',
+            "getMarried": false,
+            money: null,
+            habit: 'WatchaMovie',
+            favorite: {
+                movie: 'Notebook',
+                music: 'Do you wanna do nothing with me',
+            }
+        }
+    </script>
+</body>
+</html>
