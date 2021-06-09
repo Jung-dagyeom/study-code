@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- 기본 css, js import 순서 -->
+<link rel="stylesheet" href="style.css">
+<!-- local에 있는  jQuary 파일 import -->
+<style>
+    img {
+        width: 300px;
+    }
+    button {
+        background: pink;
+        margin-bottom: 3%;
+    }
+    .container {
+        text-align: center;
+    }
+</style>
+<script src="./js/jquery-3.6.0.min.js"></script>
+<script>
+    // js 는 클래스 id가 더 낫다.
+    // 1번 jquery 준비 구문
+    // $(document).ready(function(){
+    // js/jquery 코드 작성
+    // })
+    // 2번 jquery 준비 구문 (추천)
+    // js, jquery 실행문 다 작성 가능
+        $(function(){
+        //     $("#btnShow").click(function(){
+        //         $("img").show();
+        //     })
+        //     $("#btnHide").click(function(){
+        //         $("img").hide();
+        //     })
+        //  var $h1 = $('h1');
+        //  var h1 = document.querySelector('h1');
+        //  console.log($h1);
+        //  console.log(h1);
+        // $h1.eq(0).css('color', 'red');
+
+        var $h1 = $('h1');
+        var $idH1 = $('#h1');
+        var $classH1 = $('.h1');
+
+        console.log($h1)
+        console.log($idH1)
+        console.log(
+            $idH1.eq(0)
+            );
+        })
+        
+</script>
+
+<title>jquery import2</title>
+</head>
+<body>
+    <div class="container">
+
+        <h1>title</h1>
+        <h1 id="h1">title</h1>
+        <h1 class="h1">title</h1>
+
+        <div class="controls">
+            <button id="btnShow">show</button>
+            <button id="btnHide">hide</button>
+        </div>
+        <img src="./one-piece-07.jpg" alt="">
+    </div>
+
+</body>
+</html>

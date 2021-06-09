@@ -20,12 +20,14 @@
     }
     #skill {
         /* border: 1px solid #000; */
+        margin-top: 10rem;
     }
     .accordian {
         width: 500px;
         margin: 0 auto;
         background: #50586C;
         color: #DCE2F0;
+        position: relative;
     }
     .accordian__title {
         display: flex;
@@ -54,6 +56,18 @@
         color: #DCE2F0;
         background: #50586C;
     }
+    #closeAll {
+        position: absolute;
+        right: 0;
+        bottom: 100%;
+        padding: 1rem;
+        background: #50586C;
+        color: #DCE2F0;
+        border: none;
+        border-radius: .5rem .5rem 0 0;
+        cursor: pointer;
+    }
+
 </style>
 </head>
 <body>
@@ -61,6 +75,9 @@
     accordian__anhcor : BEM(Block - Element - Modified)- 장점: 클래스 바로 접근 가능/ 단점: 클래스명이 길다. 이를을 짓기 힘들다.-->
     <section id="skill">
         <ul class="accordian">
+            <button id="closeAll">
+                close all
+            </button>
             <li class="accordian__item">
                 <div class="accordian__title open">
                     <a href="#">About</a>
@@ -93,7 +110,8 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae aut vel blanditiis dolores molestiae ullam debitis et consequatur delectus distinctio magni officia aliquam nisi eum odio totam, harum eveniet?
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae aut vel blanditiis dolores molestiae ullam debitis et consequatur delectus distinctio magni officia aliquam nisi eum odio totam, harum eveniet?
                 </p>   
-            </li>
+            </li>$ git remote add origin https://github.com/Jung-dagyeom/study-code.git
+
         </ul>
     </section>
     <!-- 1. title을 클릭했을때
@@ -101,10 +119,6 @@
     -->
     <script>
         var title = document.querySelectorAll('.accordian__title');
-        console.log(title);
-        console.log(title[0]);
-        console.log(title[1]);
-        console.log(title[2]);
         // title[0].addEventListener('click', function(){
             //     title[0].classList.toggle('open');
             // })
@@ -117,17 +131,31 @@
         //  위에 반복되는걸 반복문으로 줄여보자
         // this 전역 변수, 특수한 변수
         // window = this 는 같은 레벨이다.
-        
+        var title = document.querySelectorAll('.accordian__title')
         for(var i = 0; i < title.length; i++){
             
             title[i].addEventListener('click', function(){
+                funcCloseAll();
                 // click이 되었을때 this(자기자신에) classList에 toggle해라!
                 this.classList.toggle('open')
             })
-
         }
-
+        // 전체 닫기
+        // var closeAll = document.getElementById("closeAll");
+        // closeAll.addEventListener('click', function(){
+        //     for(var i = 0; title.length; i++){
+        //         title[i].classList.remove('open')
+        //     }
+        // })
+        var closeAll = document.getElementById("closeAll");
+        closeAll.addEventListener('click', function(){
+            funcCloseAll();
+        });
+        function funcCloseAll(){
+            for(var i = 0; i < title.length; i++){
+                title[i].classList.remove('open');
+            }          
+        };
     </script>
-
 </body>
 </html>

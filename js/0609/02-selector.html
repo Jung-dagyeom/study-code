@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jquery selector</title>
+</head>
+<body>
+
+<button>click</button>
+<div class="container">
+    <h1 id="title">title</h1>
+    <p id="desc" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, odio laborum nam temporibus cumque nostrum architecto aliquam aspernatur eveniet consequuntur, distinctio vero eaque totam quisquam illum animi corporis obcaecati maiores!</p>
+    <h2>heading2</h2>
+    <h2>heading2</h2>
+    <h2>heading2</h2>
+    <h2>heading2</h2>
+</div>
+
+
+
+    <!-- 스크립트 작성 -->
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script>
+        // 태그명으로 객체 선택
+            var $button = $('button');
+            // console.log($button);
+        // class명으로 객체 선택
+            // var $container = $('.container');
+            // console.log($container);
+        // id명으로 객체 선택
+            // var $title = $('#title');
+            // console.log($title);
+        // css 자식 선택자를 넘길 수 있다.
+            var $title = $('.container h1');
+            // console.log($title);
+        // children 메서드 사용
+        // 객체를 선택하는 메서드라서 태그, id, class 전달을 통해 객체 선택 가능
+        // var $container = $('.container').children('.para');
+        // console.log($container)
+        
+        // var $desc = $('.para');
+        // var $descPrev = $desc.prev();
+        // var $descNext = $desc.next();
+
+        // eq는 내가 원하는 순서를 선택할 수 있다.
+        var $h2 = $('h2');
+        console.log($h2);
+        $button.click(function(){
+            // $container.css("color", 'coral');
+            // $title.css('font-size', "5rem")
+            // $descPrev.css('color', 'blue');
+            // $descNext.css('color', 'blue');
+            $h2.eq(0).css('color', 'red');
+            $h2.eq(1).css('color', 'green');
+            $h2.eq(2).css('color', 'gold');
+            $h2.eq(3).css('color', 'pink');
+        })
+
+    </script>
+
+</body>
+</html>

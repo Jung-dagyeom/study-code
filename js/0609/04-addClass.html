@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>addClass, remove, toggle</title>
+<style>
+    .desc {
+        background: teal;
+        color: #999;
+        padding: 2rem;
+    }
+    .dark {
+        background: #111;
+    }
+</style>
+</head>
+<body>
+    <div class="control">
+        <button id="btnAdd">add</button>
+        <button id="btnRemove">remove</button>
+        <button id="btnToggle">toggle</button>
+    </div>
+    <p class="desc dark">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima illum repellendus animi officia? Rerum dolore maiores saepe aperiam perspiciatis error eius accusamus nobis facere, possimus voluptas sunt vel soluta eveniet.
+    </p>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        var $btnAdd = $('#btnAdd'),
+            $btnRemove = $('#btnRemove'),
+            $btnToggle = $('#btnToggle'),
+            $desc = $('.desc')
+
+            // add event
+            $btnAdd.click(function(){
+                $desc.addClass('dark')
+            })
+            // remove event
+            $btnRemove.click(function(){
+                $desc.removeClass('dark')
+            })
+            console.log(this)
+            // toggle event
+            $btnToggle.click(function(){
+                $desc.toggleClass('dark')
+            })
+            // this는 자기자신을 선택한다.
+            $btnToggle.click(function(){
+                console.log(this);
+                $(this).toggleClass('dark')
+            })
+
+    </script>
+
+</body>
+</html>

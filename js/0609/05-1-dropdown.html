@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>dropdown</title>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+    }
+    ul {
+        list-style: none;
+    }
+    .navbar {
+        /* background: #331b3f; */
+        color: #acc7b4;
+        width: 300px;
+        display: flex;
+        margin: 0 auto;
+    }
+    .navbar__item {
+        width: 100px;
+    }
+    .navbar__menu {
+        background: #331b3f;
+    }
+    .navbar a {
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+    }
+    .navbar__submenu a {
+        color: #331b3f;
+        background: #acc7b4;
+    }
+    .navbar__submenu a:hover  {
+        background: #331b3f;
+        color: #fff;
+    }
+</style>
+</head>
+<body>
+<!-- navbar__menu : BEM 방식 -->
+    <nav>
+        <ul class="navbar">
+            <li class="navbar__item">
+                <a href="#" class="navbar__menu">
+                    menu1
+                </a>
+                <div class="navbar__submenu">
+                    <a href="#">sub-menu1</a>
+                    <a href="#">sub-menu2</a>
+                    <a href="#">sub-menu3</a>
+                    <a href="#">sub-menu4</a>
+                </div>
+            </li>
+            <li class="navbar__item">
+                <a href="#" class="navbar__menu">
+                    menu1
+                </a>
+                <div class="navbar__submenu">
+                    <a href="#">sub-menu1</a>
+                    <a href="#">sub-menu2</a>
+                    <a href="#">sub-menu3</a>
+                    <a href="#">sub-menu4</a>
+                </div>
+            </li>
+            <li class="navbar__item">
+                <a href="#" class="navbar__menu">
+                    menu1
+                </a>
+                <div class="navbar__submenu">
+                    <a href="#">sub-menu1</a>
+                    <a href="#">sub-menu2</a>
+                    <a href="#">sub-menu3</a>
+                    <a href="#">sub-menu4</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        // 초기 상태 세팅
+        var $submunu = $('.navbar__submenu');
+        var $navbarItem = $('.navbar__item');
+        $submunu.hide();
+        //  마우스 호버 시 sub menu 보이기
+        $navbarItem.mouseenter(function(){
+            console.log(this);
+            // var subMunu = $(this).children(.navbar__submenu);
+            //     subMunu.slideDown();
+            // 위의 축약 버전이 $(this).children('.navbar__submenu').slideDown();
+            $(this).children('.navbar__submenu').stop().slideDown();
+        })
+        $navbarItem.mouseleave(function(){
+            $(this).children('.navbar__submenu').stop().slideUp();
+        })
+    </script> 
+</body>
+</html>
