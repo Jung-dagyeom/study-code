@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>tabs practice</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /* 일관성이 유지된다. */
+    :root {
+        --mb-0-5: 0.5rem;
+        --mb-1: 1rem;
+        --mb-1-5: 1.5rem;
+        --mb-2: 2rem;
+        --mb-2-5: 2.5rem;
+    }
+    .flex {
+        display: flex;
+    }
+    .flexbox-center {
+        justify-content: center;
+        align-items: center;
+    }
+    .tab {
+        width: 660px;
+        margin: 0 auto;
+        background: #348597;
+        color: #F4A896;
+    }
+    .tab__desc {
+        background: #F4A896;
+        color: #348597;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    .tab__menu {
+        display: flex;
+    }
+    .tab__menu a {
+        width: 100px;
+        height: 50px;
+    }
+    .tab__menu a.selected {
+        background: #F4A896;
+        color: #348597;
+    }
+    
+</style>
+</head>
+<body>
+    <section>
+        <div class="tab">
+            <div class="tab__menu">
+                <a href="#" class="flex flexbox-center selected">tab 1</a>
+                <a href="#" class="flex flexbox-center">tab 2</a>
+                <a href="#" class="flex flexbox-center">tab 3</a>
+                <a href="#" class="flex flexbox-center">tab 4</a>
+
+            </div>
+            <div class="tab__content">
+                <div class="tab__desc">
+                    <h1>tab1</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, amet doloribus itaque nam ut odio provident ad, eligendi fuga voluptates eum omnis non. Nobis, enim! Sint illum pariatur quo nostrum.
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, amet doloribus itaque nam ut odio provident ad, eligendi fuga voluptates eum omnis non. Nobis, enim! Sint illum pariatur quo nostrum.
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, amet doloribus itaque nam ut odio provident ad, eligendi fuga voluptates eum omnis non. Nobis, enim! Sint illum pariatur quo nostrum.
+                    </p>
+                </div>
+                <div class="tab__desc">
+                    <h1>tab2</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, amet doloribus itaque nam ut odio provident ad, eligendi fuga voluptates eum omnis non. Nobis, enim! Sint illum pariatur quo nostrum.
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, amet doloribus itaque nam ut odio provident ad, eligendi fuga voluptates eum omnis non. Nobis, enim! Sint illum pariatur quo nostrum.
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, amet doloribus itaque nam ut odio provident ad, eligendi fuga voluptates eum omnis non. Nobis, enim! Sint illum pariatur quo nostrum.
+                    </p>
+                </div>
+                <div class="tab__desc">
+                    <h1>tab3</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, amet doloribus itaque nam ut odio provident ad, eligendi fuga voluptates eum omnis non. Nobis, enim! Sint illum pariatur quo nostrum.
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, amet doloribus itaque nam ut odio provident ad, eligendi fuga voluptates eum omnis non. Nobis, enim! Sint illum pariatur quo nostrum.
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, amet doloribus itaque nam ut odio provident ad, eligendi fuga voluptates eum omnis non. Nobis, enim! Sint illum pariatur quo nostrum.
+                    </p>
+                </div>
+                <div class="tab__desc">
+                    <h1>tab4</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, amet doloribus itaque nam ut odio provident ad, eligendi fuga voluptates eum omnis non. Nobis, enim! Sint illum pariatur quo nostrum.
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, amet doloribus itaque nam ut odio provident ad, eligendi fuga voluptates eum omnis non. Nobis, enim! Sint illum pariatur quo nostrum.
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, amet doloribus itaque nam ut odio provident ad, eligendi fuga voluptates eum omnis non. Nobis, enim! Sint illum pariatur quo nostrum.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+
+        var $tabMenu = $('.tab__menu a');
+        var $desc = $('.tab__desc');
+
+        // 초기 세팅
+        $desc.hide();
+        $desc.eq(0).show();
+
+
+        // tab 메뉴를 클릭하면 해당하는 desc 보이기
+        $tabMenu.click(function(){
+            var idx = $(this).index();
+            $tabMenu.removeClass('selected');
+            $(this).addClass('selected');
+            $desc.hide();
+            $desc.eq(idx).slideDown();
+        })
+
+    </script>
+</body>
+</html>
