@@ -7,32 +7,47 @@
 <link rel="stylesheet" href="./css/style.css">
 <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 <!-- jquery -->
+<!-- CDN -->
+<!-- 
+    1. 장점: 서비스 용량이 가벼워 진다
+    2. 단점: 과부가 원인이 될 수 있다. CDN이 많아질 경우
+ -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<!-- js -->
+<!-- local  file -->
+<!-- <script src="./js/jQuery3.6.0"></script> -->
+<!-- script.js -->
 <script src="./js/script.js"></script>
-<title></title>
+<title>basic laytou</title>
 </head>
 <body>
     <!-- header -->
     <header id="header" class="header">
         <h1 class="logo">
-            LOGO
+            Logo
         </h1>
+        
         <div class="toggle">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
         </div>
+
         <ul class="gnb">
             <li class="gnb__item">
-                <a href="#" class="gnb__menu">About</a>
+                <a href="#" class="gnb__menu" data-target="#about">About</a>
             </li>
             <li class="gnb__item">
-                <a href="#" class="gnb__menu">Skills</a>
+                <!-- 
+                    data-이름
+                    data-link
+                    data-target
+                    data-color
+                 -->
+                <a href="#" class="gnb__menu" data-target="#skills">Skills</a>
             </li>
             <li class="gnb__item">
-                <a href="#" class="gnb__menu">Contact</a>
+                <a href="#" class="gnb__menu" data-target="#contact">Contact</a>
             </li>
         </ul>
     </header>
@@ -40,30 +55,30 @@
     <section class="about flex-center" id="about">
         <div class="about__container">
             <h1>about</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis enim doloribus nostrum suscipit, veritatis sit est quam ipsam! Placeat cupiditate esse qui? Modi eos a ullam eum dicta sunt minus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam iure quia harum, enim repellat vel quae, accusantium, atque ut dolor explicabo exercitationem voluptatem ad. Nobis, recusandae aliquam. Ratione, nihil quis.</p>
         </div>
     </section>
-     <!-- section.skills -->
+    <!-- section.skills -->
     <section class="skills flex-center" id="skills">
         <div class="skills__container">
             <h1>skills</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis enim doloribus nostrum suscipit, veritatis sit est quam ipsam! Placeat cupiditate esse qui? Modi eos a ullam eum dicta sunt minus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam iure quia harum, enim repellat vel quae, accusantium, atque ut dolor explicabo exercitationem voluptatem ad. Nobis, recusandae aliquam. Ratione, nihil quis.</p>
         </div>
     </section>
-     <!-- section.contact -->
+    <!-- section.contact -->
     <section class="contact flex-center" id="contact">
         <div class="contact__container">
             <h1>contact</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis enim doloribus nostrum suscipit, veritatis sit est quam ipsam! Placeat cupiditate esse qui? Modi eos a ullam eum dicta sunt minus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam iure quia harum, enim repellat vel quae, accusantium, atque ut dolor explicabo exercitationem voluptatem ad. Nobis, recusandae aliquam. Ratione, nihil quis.</p>
         </div>
     </section>
-    <!-- arrow Up -->
+    <!-- arrow up -->
     <div id="arrowUp" class="flex-center">
         <i class="uil uil-arrow-up"></i>
     </div>
     <!-- 딤처리 -->
-    <div id="dimmed"></div>
-
+    <div id="dimmed">
+    </div>
 
 </body>
 </html>
